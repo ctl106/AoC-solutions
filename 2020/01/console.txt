@@ -1,0 +1,119 @@
+Python 3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def discard(big, small, entry):
+...     return
+... 
+>>> test1 = [1, 2, 3]
+>>> test2 = [4, 5, 6]
+>>> discard(test1, test2, 3)
+>>> 
+>>> def addbig(big, small, entry):
+...     big.append(entry)
+...     return
+... 
+>>> def addbig(test2, test1, 7)
+  File "<stdin>", line 1
+    def addbig(test2, test1, 7)
+                             ^
+SyntaxError: invalid syntax
+>>> addbig(test2, test1, 7)
+>>> test2
+[4, 5, 6, 7]
+>>> 
+>>> def addsmall(big, small, entry):
+...     small.append(entry)
+...     return
+... 
+>>> 
+>>> filter(big, small, limit):
+  File "<stdin>", line 1
+    filter(big, small, limit):
+                             ^
+SyntaxError: invalid syntax
+>>> def filter(big, small, limit):
+... 
+  File "<stdin>", line 2
+    
+    ^
+IndentationError: expected an indented block
+>>> 
+>>> 
+>>> def filter(big, small, max):
+... 
+  File "<stdin>", line 2
+    
+    ^
+IndentationError: expected an indented block
+>>> def filter(big, small, max, input):
+...     for entry in input:
+...             if entry > max:
+...                     di
+... 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> actions {"discard": discard, "addbig": addbig, "addsmall": addsmall}
+  File "<stdin>", line 1
+    actions {"discard": discard, "addbig": addbig, "addsmall": addsmall}
+            ^
+SyntaxError: invalid syntax
+>>> actions = {"discard": discard, "addbig": addbig, "addsmall": addsmall}
+>>> actions["discard"](test2, test1, 300)
+>>> 
+>>> def filter(big, small, max, input):
+...     for entry in input:
+...             if entry > max:
+...                     actions["discard"](big, small, entry)
+...             elif entry > max/2:
+...                     actions["addbig"](big, small, entry)
+...             elif entry < max/2:
+...                     actions["addsmall"](big, small, entry)
+...             else:
+...                     half = True
+...     return half
+... 
+>>> def find_parts(input, sum):
+...     big = []
+...     small = []
+...     
+...     filter(big, small, sum, input)
+...     
+...     big_half = None
+...     small_half = None
+... 
+>>> def find_parts(input, sum):
+...     big = []
+...     small = []
+...     
+...     filter(big, small, sum, input)
+...     
+...     big_half = None
+...     small_half = None
+... 
+>>> def find_parts(input, sum):
+...     big = []
+...     small = []
+...     
+...     filter(big, small, sum, input)
+...     
+...     big_half = None
+...     small_half = None
+...     
+...     for b in big:
+...             for s in small:
+...                     if b+s == sum:
+...                             big_half = b
+...                             small_half = s
+...                             break
+...             if big_half and small_half:
+...                     break
+...     return (big_half, small_half)
+... 
+>>> def solution(input, sum):
+...     halves = find_arts(input, sum)
+...     mult = halves[0] * halves[1]
+...     return mult
+... 
+>>> 
